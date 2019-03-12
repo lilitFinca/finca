@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6574" started-at="2019-03-11T08:30:41Z" finished-at="2019-03-11T08:30:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6574" started-at="2019-03-11T08:30:41Z" finished-at="2019-03-11T08:30:48Z">
+      <class name="automation.com.finca.tests.BaseTest">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:automation.com.finca.tests.BaseTest@589838eb]" name="setUP" is-config="true" duration-ms="6137" started-at="2019-03-11T08:30:41Z" finished-at="2019-03-11T08:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="login()[pri:0, instance:automation.com.finca.tests.BaseTest@589838eb]" name="login" duration-ms="421" started-at="2019-03-11T08:30:47Z" finished-at="2019-03-11T08:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- automation.com.finca.tests.BaseTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
