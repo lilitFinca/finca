@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -18,11 +19,13 @@ public class Base {
 
 	public DesiredCapabilities getCapability() throws MalformedURLException {
 		File f = new File(Constants.FILE_PATH);
+		System.out.println("filepath:+"+f);
 		File fs = new File(f, Constants.APK_NAME);
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "appium");
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		System.out.println(cap);
 		return cap;
 
 	}
