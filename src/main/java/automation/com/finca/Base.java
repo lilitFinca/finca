@@ -25,6 +25,8 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "appium");
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		cap.setCapability("autoGrantPermissions", "true");
+		cap.setCapability("autoAcceptAlerts", "true");
 		System.out.println(cap);
 		return cap;
 
@@ -33,7 +35,7 @@ public class Base {
 	
 	public RemoteWebDriver initDriver() throws MalformedURLException{
 		DesiredCapabilities cap = getCapability();
-	    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+	    driver = new RemoteWebDriver(new URL("http://192.168.59.2:4723/wd/hub"), cap);
 	    driver.manage().timeouts().implicitlyWait(Constants.TIMEOUT, TimeUnit.SECONDS);
 	    return driver;
 	} 

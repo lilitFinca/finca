@@ -17,10 +17,11 @@ public class ExcelUtils {
 	 XSSFSheet excelSheet = null;
 	 XSSFRow row = null;
 	 XSSFCell cell = null;
-	 public Object[][] getData() throws IOException {
+	 
+	 public Object[][] getData(String sheetName) throws IOException {
 	 FileInputStream fis = new FileInputStream(Constants.EXCEL_PATH); 
 	 excelWorkbook = new XSSFWorkbook(fis);
-	 excelSheet = excelWorkbook.getSheet("finca");
+	 excelSheet = excelWorkbook.getSheet(sheetName);
 	 // Find number of rows in excel file
 	 int rowCount = excelSheet.getLastRowNum() - excelSheet.getFirstRowNum()+1;
 	 int colCount = excelSheet.getRow(0).getLastCellNum();

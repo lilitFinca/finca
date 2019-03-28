@@ -50,7 +50,12 @@ public class LoginPO {
 		return driver;
 	}
 	
-	
+	public void login(String email, String password) {
+		getLoginInput().sendKeys(email);
+		getpasswordInput().sendKeys(password);
+		getDriver().navigate().back();
+		getLoginButton().click();
+	}
 	
 	
 

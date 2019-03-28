@@ -6,7 +6,7 @@
       <class name="automation.com.finca.tests.LoginTest">
         <methods>
           <include name="setUP"/>
-          <include name="login"/>
+          <include name="login" invocation-numbers="0"/>
         </methods>
       </class> <!-- automation.com.finca.tests.LoginTest -->
     </classes>
